@@ -485,6 +485,103 @@ h6 {
     margin-bottom: 35px;
 }
 
+/* Program Icons Styling */
+.program-card img {
+    display: none;
+    /* Hide the old images */
+}
+
+.program-icon {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 0;
+    transition: var(--transition);
+}
+
+.program-card:hover .program-icon {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, var(--secondary), #ff9800);
+}
+
+.program-icon i {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+/* Program Specific Colors (Optional refinement) */
+.program-card:nth-child(1) .program-icon {
+    background: linear-gradient(135deg, #4f46e5, #818cf8);
+}
+
+/* CSIT - Indigo */
+.program-card:nth-child(2) .program-icon {
+    background: linear-gradient(135deg, #0ea5e9, #7dd3fc);
+}
+
+/* BCA - Sky */
+.program-card:nth-child(3) .program-icon {
+    background: linear-gradient(135deg, #10b981, #6ee7b7);
+}
+
+/* BIM - Emerald */
+.program-card:nth-child(4) .program-icon {
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+/* BHM - Amber */
+.program-card:nth-child(5) .program-icon {
+    background: linear-gradient(135deg, #ef4444, #f87171);
+}
+
+/* BBS - Red */
+
+/* Program Sections and Grids */
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.program-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.program-info {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.program-icon {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: var(--white);
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    transition: var(--transition);
+}
+
+.program-card:hover .program-icon i {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.program-icon i {
+    transition: var(--transition);
+}
+
 .cta {
     background-image: url('assets/cta-bg.jpg');
     background-size: cover;
