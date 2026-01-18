@@ -3,17 +3,28 @@
   It includes sections for the header, hero, about us, programs, strengths,
   news & notices, events, facilities, testimonials, tie-ups & MOUs, call to action,
   and footer.-->
-  <!-- Getting ready for the Himalaya Darshan College website. Deploying this website will provide a comprehensive overview of the college's offerings, facilities, and opportunities for students. -->
+<!-- Getting ready for the Himalaya Darshan College website. Deploying this website will provide a comprehensive overview of the college's offerings, facilities, and opportunities for students. -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Himalaya Darshan College</title>
+    <meta name="description"
+        content="Himalaya Darshan College - Providing value-based quality education in Biratnagar, Nepal. Programs include BSc. CSIT, BCA, BIM, BHM, and BBS." />
+    <meta name="keywords"
+        content="Himalaya Darshan College, HDC, Biratnagar, College in Nepal, BSc CSIT, BCA, BIM, BHM, BBS" />
+    <meta property="og:title" content="Himalaya Darshan College | Premium Education in Biratnagar" />
+    <meta property="og:description"
+        content="Join Himalaya Darshan College for innovative opportunities and a highly academic environment." />
+    <meta property="og:image" content="assets/logo/himalayalogo.png" />
+    <meta property="og:type" content="website" />
+    <title>Himalaya Darshan College | Premium Education in Biratnagar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
 
 </head>
 
@@ -27,19 +38,21 @@
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
                     <span>Email:
-              <a href="mailto:himalayadarshan5@gmail.com"
-                >himalayadarshan5@gmail.com</a
-              >
-            </span>
+                        <a href="mailto:himalayadarshan5@gmail.com">himalayadarshan5@gmail.com</a>
+                    </span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone-alt"></i>
                     <span>Phone:
-                        <a href="tel:021-590471">021-0590471</a>/<a href="tel:021-590571">021-590571</a></span> </div>
+                        <a href="tel:021-590471">021-0590471</a>/<a href="tel:021-590571">021-590571</a></span>
+                </div>
             </div>
         </div>
         <nav class="navigation">
             <div class="container">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <ul id="primary-menu" class="navbar">
                     <li><a href="index.html">HOME</a></li>
                     <li>
@@ -62,11 +75,10 @@
                     </li>
                     <li>
                         <a href="registeration.html">Admission
-                <span class="menu-badge badge-bounce">Apply Now</span></a
-              >
-            </li>
-            <li>
-              <a href="#">Registration</a>
+                            <span class="menu-badge badge-bounce">Apply Now</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Registration</a>
                         <ul class="sub-menu">
                             <li><a href="cmat.html">CMAT</a></li>
                         </ul>
@@ -86,362 +98,315 @@
                     <form role="search" method="get" class="search-form" action="#">
                         <input type="search" class="search-field" placeholder="Search &hellip;" name="s" />
                         <button type="submit" class="search-submit">
-                <i class="fas fa-search"></i>
-              </button>
+                            <i class="fas fa-search"></i>
+                        </button>
                     </form>
                 </div>
             </div>
         </nav>
 
     </header>
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="slider">
-            <div class="slide" style="background-image: url('assets/slider/slider-1-min.jpg')"></div>
-            <div class="slide" style="background-image: url('assets/slider/slider-2-min.jpg')"></div>
-            <div class="slide" style="background-image: url('assets/slider/slider-3-min.jpg')"></div>
-            <div class="slide" style="background-image: url('assets/slider/slider-4-min.jpg')"></div>
-            <div class="slide" style="background-image: url('assets/slider/slider-5-min.jpg')"></div>
-            <div class="slide" style="background-image: url('assets/slider/slider-6-min.jpg')"></div>
-        </div>
-        <div class="slider-controls">
-            <button class="prev" onclick="prevSlide()">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-            <button class="next" onclick="nextSlide()">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-        </div>
-    </section>
-    <h3 id="aboutus">ABOUT US</h3>
-    <p>Welcome to Himalaya Darshan College</p>
-    <!-- About Us Section -->
-    <section class="introduction">
-        <div class="container">
-            <div class="intro-content">
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="slider">
+                <div class="slide" style="background-image: url('assets/slider/slider-1-min.jpg')">
+                    <div class="hero-content">
+                        <h1>Excellence in <span>Education</span></h1>
+                        <p>Empowering the next generation of leaders with value-based quality education.</p>
+                        <a href="registeration.html" class="btn-premium">Apply Now</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('assets/slider/slider-2-min.jpg')">
+                    <div class="hero-content">
+                        <h1>Innovative <span>Learning</span></h1>
+                        <p>Discover opportunities and advance your career with our specialized programs.</p>
+                        <a href="#programs" class="btn-premium">View Programs</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('assets/slider/slider-3-min.jpg')">
+                    <div class="hero-content">
+                        <h1>Your Future <span>Starts Here</span></h1>
+                        <p>Join a community committed to academic excellence and professional growth.</p>
+                        <a href="contactus.html" class="btn-premium">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+                <button class="next" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+        <!-- About Us Section -->
+        <section id="aboutus" class="aboutus">
+            <div class="container flex-container">
+                <div class="about-text">
+                    <span class="section-subtitle">Why Choose Us</span>
+                    <h2>About <span>HDC</span></h2>
+                    <p>Himalaya Darshan College, established in 2070 B.S., is a premier academic institution in
+                        Biratnagar dedicated to providing value-based quality education.</p>
+                    <a href="contactus.html" class="btn-premium">Learn More</a>
+                </div>
                 <div class="intro-image">
                     <img src="assets/himalayan college/himalaya-min.png" alt="Himalaya Darshan College" />
                 </div>
-                <div class="intro-text">
-                    <h2>Welcome to Himalayan Darshan College</h2>
-                    <p>
-                        Established in 2070 B.S., Himalaya Darshan College offers innovative opportunities in a highly academic environment. Our mission is to provide value-based quality education at the graduate level, fostering personal and professional growth through our
-                        experienced faculty.
-                    </p>
-                    <a href="#" class="btn">Learn More</a>
+            </div>
+        </section>
+        <!-- Programs Section -->
+        <section id="programs" class="programs">
+            <div class="container">
+                <span class="section-subtitle">Academic Excellence</span>
+                <h2>Our <span>Programs</span></h2>
+                <div class="program-grid">
+                    <div class="program-card glass-card">
+                        <img src="assets/course/csit.jpg" alt="BSc. CSIT" />
+                        <div class="program-info">
+                            <h3>BSc. CSIT</h3>
+                            <p>Bachelor of Science in Computer Science and Information Technology.</p>
+                            <a href="registeration.html" class="btn-premium">Apply Now</a>
+                        </div>
+                    </div>
+                    <div class="program-card glass-card">
+                        <img src="assets/course/bca.png" alt="BCA" />
+                        <div class="program-info">
+                            <h3>BCA</h3>
+                            <p>Bachelor in Computer Applications.</p>
+                            <a href="registeration.html" class="btn-premium">Apply Now</a>
+                        </div>
+                    </div>
+                    <div class="program-card glass-card">
+                        <img src="assets/course/bim.png" alt="BIM" />
+                        <div class="program-info">
+                            <h3>BIM</h3>
+                            <p>Bachelor in Information Management.</p>
+                            <a href="registeration.html" class="btn-premium">Apply Now</a>
+                        </div>
+                    </div>
+                    <div class="program-card glass-card">
+                        <img src="assets/course/bhm.png" alt="BHM" />
+                        <div class="program-info">
+                            <h3>BHM</h3>
+                            <p>Bachelor in Hotel Management.</p>
+                            <a href="registeration.html" class="btn-premium">Apply Now</a>
+                        </div>
+                    </div>
+                    <div class="program-card glass-card">
+                        <img src="assets/course/bbs.png" alt="BBS" />
+                        <div class="program-info">
+                            <h3>BBS</h3>
+                            <p>Bachelor of Business Studies.</p>
+                            <a href="registeration.html" class="btn-premium">Apply Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Our Programs Section -->
-    <section id="programs" class="programs">
-        <div class="container">
-            <h2>Our programs</h2>
-            <div class="program-grid">
-                <div class="program-card">
-                    <!-- <i class="fas fa-laptop-code"></i> -->
-                    <img src="assets/programs/bsc.CSIT.jpg" alt="" />
-                    <h3 id="BSc. CSIT">BSc. CSIT</h3>
-                    <p>
-                        A comprehensive program in computer science and Information Technology.
-                    </p>
-                </div>
-                <div class="program-card">
-                    <!-- <i class="fas fa-code"></i> -->
-                    <img src="assets/programs/bca.jpg" alt="BCA" />
-                    <h3 id="BCA">BCA</h3>
-                    <p>
-                        Focus on developing technical and communicationskills for the IT industry.
-                    </p>
-                </div>
-                <div class="program-card">
-                    <!-- <i class="fas fa-chart-line"></i> -->
-                    <img src="assets/programs/bim.jpg" alt="BIM" />
-                    <h3 id="BIM">BIM</h3>
-                    <p>
-                        Blending IT and management courses to create well-rounded professionals.
-                    </p>
-                </div>
-                <div class="program-card">
-                    <!-- <i class="fas fa-hotel"></i> -->
-                    <img src="assets/programs/bhm.jpg" alt="BHM" />
-                    <h3 id="BHM">BHM</h3>
-                    <p>
-                        Preparing students for careers in the global hospitality industry.
-                    </p>
-                </div>
-                <div class="program-card">
-                    <!-- <i class="fas fa-briefcase"></i> -->
-                    <img src="assets/programs/bbs.jpg" alt="" />
-                    <h3 id="BBS">BBS</h3>
-                    <p>
-                        A versatile business studies program designed to build foundational business skills.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Strengths Section -->
-    <section class="Strengths">
-        <div class="container">
-            <h2>Strengths of Himalaya Darshan College</h2>
-            <div class="strengths-grid">
-                <div class="strength-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Experienced faculty</h3>
-                    <p>
-                        Our faculty members bring a wealth of knowledge and industry experience to the classroom.
-                    </p>
-                </div>
-                <div class="strength-card">
-                    <i class="fas fa-laptop"></i>
-                    <h3>Modern Facilities</h3>
-                    <p>
-                        State-of-the-art facilities and resources to support student learning and development.
-                    </p>
-                </div>
-                <div class="strength-card">
-                    <i class="fas fa-globe"></i>
-                    <h3>Global Exposure</h3>
-                    <p>
-                        Opportunities for international exposure through tie-ups and MOUs with global institutions.
-                    </p>
+        <!-- Strengths Section -->
+        <section class="strengths">
+            <div class="container">
+                <span class="section-subtitle">Why We Excel</span>
+                <h2>Our <span>Strengths</span></h2>
+                <div class="strengths-grid">
+                    <div class="strength-card glass-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Experienced Faculty</h3>
+                        <p>Learn from industry experts and seasoned academics committed to your success.</p>
+                    </div>
+                    <div class="strength-card glass-card">
+                        <i class="fas fa-vial"></i>
+                        <h3>Hi-tech Labs</h3>
+                        <p>State-of-the-art laboratories equipped with the latest technology for practical learning.</p>
+                    </div>
+                    <!-- Add more cards as needed -->
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Latest News & Notices Section -->
-    <section class="news-notices">
-        <div class="container">
-            <h2>Latest News & NOtices</h2>
-            <div class="news-list">
-                <article class="news-item">
-                    <h3>Notice Regarding Upcoming Exams</h3>
-                    <p>
-                        All students are advised to check the exam schedule for the upcoming semester exams. <a href="#">Read more</a>
-                    </p>
-                </article>
-                <article class="news-item">
-                    <h3>Admission Open for 2024</h3>
-                    <p>
-                        Admissions are now open for the 2024 academic session.
-                        <a href="registeration.html">Apply Now</a>
-                    </p>
-                </article>
-                <article class="news-item">
-                    <h3>Webinar on Industry Trends</h3>
-                    <p>
-                        Join our upcoming webinar on the latest trends in the IT industry.
-                        <a href="#">Register here</a>
-                    </p>
-                </article>
-            </div>
-        </div>
-    </section>
-    <!-- Events Section -->
-    <section class="events">
-        <div class="container">
-            <h2>Upcoming Events</h2>
-            <div class="event-list">
-                <div class="event-item">
-                    <h3>Annual Sports Meet</h3>
-                    <p>Date: 5th September 2024</p>
-                    <p>Venue: College Ground</p>
-                    <p>
-                        Description: Join us for our Annual Sports Meet with various sports activities.
-                    </p>
-                </div>
-                <div class="event-item">
-                    <h3>Alumni Meet 2024</h3>
-                    <p>Date: 20th October 2024</p>
-                    <p>Venue: College Auditorium</p>
-                    <p>
-                        Description: Reconnect with your batchmates and network with alumni.
-                    </p>
-                </div>
-                <div class="event-item">
-                    <h3>Technology Fest</h3>
-                    <p>Date: 15th November 2024</p>
-                    <p>Venue: College Campus</p>
-                    <p>
-                        Description: Showcase your technical skills at our annual Technology Fest.
-                    </p>
+        </section>
+        <!-- Latest News & Notices Section -->
+        <section class="news-notices">
+            <div class="container">
+                <h2>Latest News & NOtices</h2>
+                <div class="news-list">
+                    <article class="news-item">
+                        <h3>Notice Regarding Upcoming Exams</h3>
+                        <p>
+                            All students are advised to check the exam schedule for the upcoming semester exams. <a
+                                href="#">Read more</a>
+                        </p>
+                    </article>
+                    <article class="news-item">
+                        <h3>Admission Open for 2024</h3>
+                        <p>
+                            Admissions are now open for the 2024 academic session.
+                            <a href="registeration.html">Apply Now</a>
+                        </p>
+                    </article>
+                    <article class="news-item">
+                        <h3>Webinar on Industry Trends</h3>
+                        <p>
+                            Join our upcoming webinar on the latest trends in the IT industry.
+                            <a href="#">Register here</a>
+                        </p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Our Facilities Section -->
-    <section class="facilities">
-        <div class="container">
-            <h2>Our Facilities</h2>
-            <div class="facilities-grid">
-                <div class="facility-card">
-                    <img src="assets/facilities/digital-logic.jpg" alt="Digital Electronic Lab" />
-                    <h3>Digital Electronic Lab</h3>
-                    <p>
-                        Equipped with the latest electronic devices and tools for hands-on learning in electronics.
-                    </p>
-                </div>
-                <div class="facility-card">
-                    <img src="assets/facilities/computerlab.jpg" alt="Computer Lab" />
-                    <h3>Computer Lab</h3>
-                    <p>
-                        State-of-the-art computer lab with high-speed internet and modern software for students.
-                    </p>
-                </div>
-                <div class="facility-card">
-                    <img src="assets/facilities/canteen-300x120.jpg" alt="College Canteen" />
-                    <h3>College Canteen</h3>
-                    <p>
-                        A hygienic and spacious canteen offering a variety of healthy and delicious meals.
-                    </p>
-                </div>
-                <div class="facility-card">
-                    <img src="assets/facilities/library.jpg" alt="Library" />
-                    <h3>Library</h3>
-                    <p>
-                        A well-stocked library with a vast collection of books and journals for academic research.
-                    </p>
+        </section>
+        <!-- Events Section -->
+        <section class="events">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <div class="event-list">
+                    <div class="event-item">
+                        <h3>Annual Sports Meet</h3>
+                        <p>Date: 5th September 2024</p>
+                        <p>Venue: College Ground</p>
+                        <p>
+                            Description: Join us for our Annual Sports Meet with various sports activities.
+                        </p>
+                    </div>
+                    <div class="event-item">
+                        <h3>Alumni Meet 2024</h3>
+                        <p>Date: 20th October 2024</p>
+                        <p>Venue: College Auditorium</p>
+                        <p>
+                            Description: Reconnect with your batchmates and network with alumni.
+                        </p>
+                    </div>
+                    <div class="event-item">
+                        <h3>Technology Fest</h3>
+                        <p>Date: 15th November 2024</p>
+                        <p>Venue: College Campus</p>
+                        <p>
+                            Description: Showcase your technical skills at our annual Technology Fest.
+                        </p>
+                    </div>
                 </div>
             </div>
+        </section>
+        <p>
+            <i class="fas fa-quote-left"></i> The supportive environment at HDC has helped me achieve my
+            academic and personal goals.
+            <i class="fas fa-quote-right"></i>
+        </p>
+        <h4>- Smiridhi Koirala , BCA</h4>
         </div>
-    </section>
-    <!-- Student Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>Student Testimonials</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <img src="assets/testimonials/rishavimage.jpg" alt="Rishav thakuri" />
-                    <p>
-                        "Himalaya Darshan College has been a great place to learn and grow. The faculty and facilities are top-notch!"
-                    </p>
-                    <h4>- Rishav Malla Thakuri</h4>
-                    <p>Network Engineer</p>
-                </div>
-                <div class="testimonial-card">
-                    <p>
-                        <i class="fas fa-quote-left"></i> The supportive environment at HDC has helped me achieve my academic and personal goals.
-                        <i class="fas fa-quote-right"></i>
-                    </p>
-                    <h4>- Smiridhi Koirala , BCA</h4>
-                </div>
-                <div class="testimonial-card">
-                    <p>
-                        <i class="fas fa-thumbs-up"></i> I am grateful for the opportunities and exposure I've received at Himalaya Darshan College. <i class="fas fa-thumbs-up"></i>
-                    </p>
-                    <h4>- Ritika Thapa, BIM</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Tie-ups & MOUs Section -->
-    <section class="tieups-mous">
-        <div class="container">
-            <h2>Tie-ups & MOUs</h2>
-            <div class="tieup-grid">
-                <div class="tieup-card">
-                    <img src="assets/tieups/bf-1.png" alt="Software Company 1" />
-                    <h3>Software Company 1</h3>
-                    <p>
-                        Partnered for internships, training, and joint software development projects.
-                    </p>
-                </div>
-                <div class="tieup-card">
-                    <img src="assets/tieups/broadway-logo-new.png" alt="Software Company 2" />
-                    <h3>Software Company 2</h3>
-                    <p>
-                        Collaborating on research and development in cutting-edge software technologies.
-                    </p>
-                </div>
-                <div class="tieup-card">
-                    <img src="assets/tieups/rigo.png" alt="Software Company 3" />
-                    <h3>Software Company 3</h3>
-                    <p>
-                        MOUs for student internships, workshops, and professional certifications.
-                    </p>
-                </div>
-                <div class="tieup-card">
-                    <img src="assets/tieups/volcusoft-1.jpg" alt="Software Company 3" />
-                    <h3>Software Company 4</h3>
-                    <p>
-                        MOUs for student internships, workshops, and professional certifications.
-                    </p>
-                </div>
-                <div class="tieup-card">
-                    <img src="assets/tieups/laba-1.png" alt="Software Company 3" />
-                    <h3>Software Company 5</h3>
-                    <p>
-                        MOUs for student internships, workshops, and professional certifications.
-                    </p>
-                </div>
-                <div class="tieup-card">
-                    <img src="assets/tieups/web.gif" alt="Software Company 3" />
-                    <h3>Software Company 6</h3>
-                    <p>
-                        MOUs for student internships, workshops, and professional certifications.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Call To Action Section -->
-    <section class="cta">
-        <div class="cta-content">
-            <h2>Join Himalaya Darshan College</h2>
+        <div class="testimonial-card">
             <p>
-                Apply now to be a part of our esteemed instution and start your journey towards a brighter future.
+                <i class="fas fa-thumbs-up"></i> I am grateful for the opportunities and exposure I've
+                received at Himalaya Darshan College. <i class="fas fa-thumbs-up"></i>
             </p>
-            <a href="registeration.html" class="btn">Apply Now</a>
+            <h4>- Ritika Thapa, BIM</h4>
         </div>
-    </section>
-    <!-- Footer Section -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-col">
-                    <h3>Contact Us</h3>
-                    <p>Address: Main Road, Biratnagar-09, Nepal</p>
-                    <span>Phone:
-                        <a href="tel:021-590471">021-0590471</a>/<a href="tel:021-590571">021-590571</a></span>
-                    <p> Email:
-                        <a href="mailto:himalayadarshan5@gmail.com">himalayadarshan5@gmail.com</a
-              >
-            </p>
-          </div>
-          <div class="footer-col">
-            <h3>Follow Us</h3>
-            <ul class="social-links">
-              <li>
-                <a href="https://www.facebook.com/college.hdc"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
+        </div>
+        </div>
+        </section>
+        <!-- Tie-ups & MOUs Section -->
+        <section class="tieups-mous">
+            <div class="container">
+                <h2>Tie-ups & MOUs</h2>
+                <div class="tieup-grid">
+                    <div class="tieup-card">
+                        <img src="assets/tieups/bf-1.png" alt="Software Company 1" />
+                        <h3>Software Company 1</h3>
+                        <p>
+                            Partnered for internships, training, and joint software development projects.
+                        </p>
+                    </div>
+                    <div class="tieup-card">
+                        <img src="assets/tieups/broadway-logo-new.png" alt="Software Company 2" />
+                        <h3>Software Company 2</h3>
+                        <p>
+                            Collaborating on research and development in cutting-edge software technologies.
+                        </p>
+                    </div>
+                    <div class="tieup-card">
+                        <img src="assets/tieups/rigo.png" alt="Software Company 3" />
+                        <h3>Software Company 3</h3>
+                        <p>
+                            MOUs for student internships, workshops, and professional certifications.
+                        </p>
+                    </div>
+                    <div class="tieup-card">
+                        <img src="assets/tieups/volcusoft-1.jpg" alt="Software Company 3" />
+                        <h3>Software Company 4</h3>
+                        <p>
+                            MOUs for student internships, workshops, and professional certifications.
+                        </p>
+                    </div>
+                    <div class="tieup-card">
+                        <img src="assets/tieups/laba-1.png" alt="Software Company 3" />
+                        <h3>Software Company 5</h3>
+                        <p>
+                            MOUs for student internships, workshops, and professional certifications.
+                        </p>
+                    </div>
+                    <div class="tieup-card">
+                        <img src="assets/tieups/web.gif" alt="Software Company 3" />
+                        <h3>Software Company 6</h3>
+                        <p>
+                            MOUs for student internships, workshops, and professional certifications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call To Action Section -->
+        <section class="cta">
+            <div class="cta-content">
+                <h2>Join Himalaya Darshan College</h2>
+                <p>
+                    Apply now to be a part of our esteemed instution and start your journey towards a brighter future.
+                </p>
+                <a href="registeration.html" class="btn">Apply Now</a>
+            </div>
+        </section>
+        <!-- Footer Section -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-col">
+                        <h3>Contact Us</h3>
+                        <p>Address: Main Road, Biratnagar-09, Nepal</p>
+                        <span>Phone:
+                            <a href="tel:021-590471">021-0590471</a>/<a href="tel:021-590571">021-590571</a></span>
+                        <p> Email:
+                            <a href="mailto:himalayadarshan5@gmail.com">himalayadarshan5@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Follow Us</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://www.facebook.com/college.hdc"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
                         </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#programs">Programs</a></li>
+                            <li><a href="registeration.html">Admission</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#programs">Programs</a></li>
-                        <li><a href="registeration.html">Admission</a></li>
-                        <li><a href="contactus.html">Contact Us</a></li>
-                    </ul>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Himalaya Darshan College. All rights reserved.</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Himalaya Darshan College. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
     <script src="script.js"></script>
 </body>

@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Admission Form</title>
+    <meta name="description"
+        content="Apply for admission at Himalaya Darshan College. Quality education in Biratnagar, Nepal." />
+    <title>College Admission Form | Himalaya Darshan College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 0;
-        }
-
         .form-container {
             max-width: 800px;
             margin: 50px auto;
@@ -55,17 +55,12 @@
 
         .input-field:focus,
         .textarea-field:focus {
-            border-color: #4CAF50;
+            border-color: #ffc107;
             outline: none;
         }
 
-        .textarea-field {
-            height: 150px;
-            resize: vertical;
-        }
-
         .button {
-            background-color: #4CAF50;
+            background-color: #1a237e;
             color: white;
             padding: 12px 20px;
             border: none;
@@ -78,104 +73,160 @@
         }
 
         .button:hover {
-            background-color: #45a049;
-        }
-
-        .form-group select.input-field {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="none" stroke="%23333" stroke-width="0.75" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>') no-repeat right 10px center;
-            background-color: #fff;
-            background-size: 12px;
-        }
-
-        .form-group select.input-field:focus {
-            background-position: right 8px center;
-        }
-        /* Responsive Design */
-
-        @media (max-width: 768px) {
-            .form-container {
-                width: 90%;
-            }
-            .button {
-                width: 100%;
-            }
+            background-color: #ffc107;
+            color: #1a237e;
         }
     </style>
 </head>
 
 <body>
-    <div class="form-container">
-        <h2>College Admission Form</h2>
-        <form>
-            <!-- Personal Information -->
-            <div class="form-group">
-                <label class="label" for="name">Name:</label>
-                <input type="text" id="name" class="input-field" required>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/logo/himalayalogo.png" alt="Himalaya Darshan College" />
             </div>
-            <div class="form-group">
-                <label class="label" for="dob">Date of Birth:</label>
-                <input type="date" id="dob" class="input-field" required>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email: <a href="mailto:himalayadarshan5@gmail.com">himalayadarshan5@gmail.com</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Phone: <a href="tel:021-590471">021-0590471</a></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label class="label" for="gender">Gender:</label>
-                <select id="gender" class="input-field" required>
-                    <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
+        </div>
+        <nav class="navigation">
+            <div class="container">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="primary-menu" class="navbar">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#programs">PROGRAMS</a></li>
+                    <li><a href="index.html#aboutus">ABOUT US</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li><a href="registeration.html">ADMISSION</a></li>
+                </ul>
             </div>
-            <div class="form-group">
-                <label class="label" for="address">Address:</label>
-                <input type="text" id="address" class="input-field" required>
-            </div>
-            <div class="form-group">
-                <label class="label" for="phone">Phone:</label>
-                <input type="tel" id="phone" class="input-field" required>
-            </div>
-            <div class="form-group">
-                <label class="label" for="email">Email:</label>
-                <input type="email" id="email" class="input-field" required>
-            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="admission-form-section">
+            <div class="container">
+                <span class="section-subtitle">Join Our Community</span>
+                <h2>College <span>Admission</span></h2>
+                <div class="form-wrapper glass-card">
+                    <form action="#" method="POST" class="premium-form">
+                        <div class="form-section">
+                            <h3>Personal Information</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" class="form-control" required
+                                        placeholder="Enter full name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="dob">Date of Birth</label>
+                                    <input type="date" id="dob" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <select id="gender" class="form-control" required>
+                                        <option value="">Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" class="form-control" required
+                                        placeholder="+977-XXXXXXXXXX">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" required
+                                    placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Mailing Address</label>
+                                <input type="text" id="address" class="form-control" required
+                                    placeholder="Street, City, Ward">
+                            </div>
+                        </div>
 
-            <!-- Academic Information -->
-            <div class="form-group">
-                <label class="label" for="highschool">High School Name:</label>
-                <input type="text" id="highschool" class="input-field" required>
-            </div>
-            <div class="form-group">
-                <label class="label" for="grades">Grades/Percentage:</label>
-                <input type="text" id="grades" class="input-field" required>
-            </div>
-            <div class="form-group">
-                <label class="label" for="classrank">Class Rank:</label>
-                <input type="number" id="classrank" class="input-field" required>
-            </div>
+                        <div class="form-section">
+                            <h3>Academic Information</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="highschool">Previous Institution</label>
+                                    <input type="text" id="highschool" class="form-control" required
+                                        placeholder="School/College name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="grades">GPA / Percentage</label>
+                                    <input type="text" id="grades" class="form-control" required
+                                        placeholder="e.g. 3.6 or 75%">
+                                </div>
+                            </div>
+                        </div>
 
-            <!-- College Information -->
-            <div class="form-group">
-                <label class="label" for="program">Program of Interest:</label>
-                <select id="program" class="input-field" required>
-                    <option value="">Select</option>
-                    <option value="business">Business</option>
-                    <option value="engineering">Engineering</option>
-                    <option value="arts">Arts</option>
-                    <option value="science">Science</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label class="label" for="major">Intended Major:</label>
-                <input type="text" id="major" class="input-field" required>
-            </div>
+                        <div class="form-section">
+                            <h3>Program Selection</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="program">Program of Interest</label>
+                                    <select id="program" class="form-control" required>
+                                        <option value="">Select Program</option>
+                                        <option value="bsc-csit">BSc. CSIT</option>
+                                        <option value="bca">BCA</option>
+                                        <option value="bim">BIM</option>
+                                        <option value="bhm">BHM</option>
+                                        <option value="bbs">BBS</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="major">Intended Major (if any)</label>
+                                    <input type="text" id="major" class="form-control">
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="form-group">
-                <button type="submit" class="button">Submit Application</button>
+                        <div class="form-action">
+                            <button type="submit" class="btn-premium">Submit Admission Request</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </form>
-    </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>Address: Main Road, Biratnagar-09, Nepal</p>
+                    <p>Phone: 021-0590471</p>
+                    <p>Email: himalayadarshan5@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Himalaya Darshan College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
