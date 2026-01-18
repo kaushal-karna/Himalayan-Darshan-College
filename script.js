@@ -59,4 +59,16 @@ document.addEventListener('DOMContentLoaded', () => {
             searchForm.style.display = searchForm.style.display === 'block' ? 'none' : 'block';
         });
     }
+
+    // Header Scroll Effect (Smart Shrink)
+    const header = document.querySelector('.main-header');
+    if (header) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }, { passive: true });
+    }
 });

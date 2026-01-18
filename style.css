@@ -74,6 +74,29 @@ h6 {
     backdrop-filter: blur(10px);
     background: var(--glass);
     border-bottom: 1px solid var(--glass-border);
+    transition: var(--transition);
+    /* Add smooth transition for the whole header */
+}
+
+/* Scrolled state for the smart-shrink effect */
+.main-header.scrolled {
+    box-shadow: var(--shadow-md);
+}
+
+.main-header.scrolled .container:first-child {
+    padding: 5px 0;
+    /* Shrink top part */
+}
+
+.main-header.scrolled .logo-container img {
+    height: 45px;
+    /* Shrink logo */
+}
+
+.main-header.scrolled .contact-info {
+    opacity: 0.8;
+    transform: scale(0.9);
+    transform-origin: right center;
 }
 
 .main-header .container {
@@ -86,12 +109,19 @@ h6 {
 .logo-container img {
     height: 60px;
     width: auto;
+    transition: var(--transition);
+    /* Smooth resize */
+}
+
+.main-header .container:first-child {
+    transition: var(--transition);
 }
 
 .contact-info {
     display: flex;
     gap: 20px;
     font-size: 0.9rem;
+    transition: var(--transition);
 }
 
 .contact-item {
